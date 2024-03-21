@@ -4,22 +4,8 @@ This module gathers tree-based methods
 
 import numpy as np
 from scipy import stats
-from . import _criterion
 
 
-# =============================================================================
-# Types and constants
-# =============================================================================
-CRITERIA_CLF = {
-    "gini": _criterion.gini,
-    "impurity": _criterion.impurity,
-    "entropy": _criterion.entropy
-}
-
-CRITERIA_REG = {
-    "squared_error": _criterion.mse,
-    "absolute_error": _criterion.mae
-}
 
 # =============================================================================
 # Base decision tree
